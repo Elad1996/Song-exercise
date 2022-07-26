@@ -3,8 +3,8 @@ import pytest
 import re
 from logic.Responses import status_templates
 
-# p_ok = re.compile(r"2\d{2}")
-# p_fail = re.compile(r"4\d{2}")
+p_ok = re.compile(r"2\d{2}")
+p_fail = re.compile(r"4\d{2}")
 
 
 @pytest.mark.parametrize(("user_name", "user_password"), [("Elad", "Elgazar"), ("Adam", "Zaft"), ("Maxim", "Max")])
